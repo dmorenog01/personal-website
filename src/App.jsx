@@ -30,6 +30,7 @@ const projects = [
     id: 2
   },
 ]
+const currentGPA = '3.86'
 
 function App() {
 
@@ -42,7 +43,7 @@ function App() {
       <Section sectionLabel='EDUCATION'>
       <TitleDate title='Florida International University' date='since Jan 2021'/>
         <ul>
-          <li>Computer Science Major 3.86 GPA</li>
+          <li>Computer Science Major {currentGPA} GPA</li>
         </ul>
         <TitleDate title='Google Tech Exchange' date='Jan 2023 - May 2023'/>
         <ul>
