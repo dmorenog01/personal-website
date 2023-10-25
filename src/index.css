@@ -132,3 +132,12 @@ footer {
   text-align: center;
   margin-bottom: 10px;
 }
+
+#github {
+  fill: black;
+}
+
+#github:hover {
+  fill: rgb(216, 18, 18);
+}
+
