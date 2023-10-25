@@ -15,7 +15,7 @@ const projects = [
   },
   { 
     name: "TasaVE", 
-    description: "Reference Website for users to get and easily make conversions with the latest VES/USD exchange rate",
+    description: "Reference website for users to get and easily make conversions with the latest official VES/USD exchange rate from the Central Bank of Venezuela.",
     stack: ["Javascript", "React", "TailwindCSS", "BCV-API"],
     deployurl: undefined,
     github: "url",
@@ -52,9 +52,9 @@ function App() {
       </Section>
       <Section sectionLabel='EXPERIENCE'>
         <div className="div">
-          <TitleDate title='Dataprecio' date='since March 2022'/>
+          <TitleDate title='Dataprecio - Python Developer' date='since March 2022'/>
           <ul>
-            <li>Automated a data recollection process </li>
+            <li>Replaced a manual process for price data extraction with a fully automated one, drastically reducing the time required, while at the same time increasing scale and reliability.</li>
             <li>Developed a web app that allows users to compare products from various local retailers to find the best deal for them.</li>
           </ul>
         </div>
@@ -63,12 +63,13 @@ function App() {
         { projects.map(p => <Project key={p.id} project={p}/>)}
       </Section>
       <Signature/>
+      <footer>Copyright 2023 Diego Moreno</footer>
     </div>
   )
 }
 
 export default App
 
-// TODO: GET LINKS WORKING, ADD LINK TO GITHUB, ADD FOOTER, ADD COPYRIGHT, 
-// FIX DATAPRECIO TEXT AND TEXT IN GENERAL, ADD CONTACTS (LINKEDIN GITHUB), ADD RESUME DOWNLOAD
+// TODO:
+// FIX DATAPRECIO TEXT AND TEXT IN GENERAL, A ADD RESUME DOWNLOAD
 // SVG HOVER DECORATION LIKE REGULAR LINKS

@@ -11,7 +11,7 @@ const Project = ({ project }) => {
           </div>
         </div>
         <p>{ project.description }</p>
-        <p>Tech Stack: {project.stack.join(", ") }.</p>
+        <p><b>Tech Stack:</b> {project.stack.join(", ") }.</p>
       </article>
     )
 }
