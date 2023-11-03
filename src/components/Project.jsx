@@ -7,7 +7,8 @@ const Project = ({ project }) => {
         <div className="td">
           <h3>0{project.id} { project.name }</h3>
           <div style={{display: 'inline-flex', justifyContent: 'end', gap: '10px', alignItems: 'baseline'}}>
-            <a href="#" style={{height: '18px'}}><LinkArrow/></a><a href="#" style={{height: '20px'}}><GitHubLink/></a>
+            { project.deployurl && <a href={project.deployurl} style={{height: '18px'}} rel="noreferrer" target="_blank"><LinkArrow/></a>}
+            { project.github && <a href={project.github} style={{height: '20px'}} rel="noreferrer" target="_blank"><GitHubLink/></a>}
           </div>
         </div>
         <p>{ project.description }</p>
